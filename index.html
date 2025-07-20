@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Basic Webpage </title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+        <h1>Welcome to my Basic Webpage!</h1>
+        <p class="para"> Hello! Everyone, Welcome to my webpage. Hover around the menu to find more infomation.</p>
+  <nav>
+    <ul class="menu">
+      <li>
+        <span class="menu-title">Course</span>
+        <ul class="submenu">
+          <li><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">Kurose & Ross</a></li>
+          <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+          <li><a href="https://www.geeksforgeeks.org/web-development/" target="_blank">GeeksforGeeks</a></li>
+        </ul>
+      </li>
+      <li>
+        <span class="menu-title">Browser</span>
+        <ul class="submenu">
+          <li><button onclick="showBrowserInfo()">Navigator</button></li>
+          <li><button onclick="showWindowInfo()">Window</button></li>
+          <li><button onclick="showScreenInfo()">Screen</button></li>
+          <li><button onclick="showLocationInfo()">Location</button></li>
+        </ul>
+      </li>
+      <li>
+        <span class="menu-title">Configuration</span>
+        <ul class="submenu">
+          <li>
+            Password:
+            <input type="password" id="password" oninput="validatePassword()" placeholder="Enter password" />
+            <span id="passwordMessage"></span>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="menu-title">About</span>
+        <ul class="submenu">
+          <li>
+            <p>Created by: Lhakpa K Sherpa<br />CS Student at QC<br /></p>
+            <img src="image.png" alt="photo" width="150" height="150">
+          </li>
+          <li>
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            Message:<br>
+            <input type="text" name="Message" size="50"><br><br>
+            <input type="submit" value="Send">
+            </form>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <section id="infoDisplay"></section>
+  <script src="script.js"></script>
+</body>
+</html>

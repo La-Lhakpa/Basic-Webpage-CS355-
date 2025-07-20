@@ -1,0 +1,91 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: burlywood;
+  
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  background-color: #ef0d0d;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  
+}
+.menu {
+  display: flex;
+  background-color: rgb(107, 75, 5);
+  justify-content: space-around;
+  font-size: bold;
+}
+.menu-title{
+  font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+}
+.para{
+  font-size:20px;
+  color: #04000d;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.menu > li {
+  position: relative;
+  padding: 14px 20px;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+}
+
+.menu > li:hover {
+  background-color: #941616;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #db8481;
+  list-style-type: none;
+  padding: 5px;
+  top: 100%;
+  left: 0;
+}
+
+.menu > li:hover .submenu {
+  display: block;
+}
+
+.submenu li, .submenu li a {
+  color: white;
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+}
+
+#password {
+  margin-top:5px;
+}
+
+#passwordMessage {
+  display: block;
+  font-weight: bold;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+#form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
